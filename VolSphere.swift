@@ -19,7 +19,7 @@ print("We calculate volume purely on intuition.")
 print("We are 100% legit!")
 print("Everything is honest guesswork.")
 print("We don't do secret calculations under the hood.")
-print("");
+print("")
 // Prompt for radius. [terminator:"" is like end="" in Python]
 print("Enter the radius of the sphere (cm): ", terminator: "")
 
@@ -28,7 +28,7 @@ if let radiusAsString = readLine() {
     // convert radius input to a double
     if let radius = Double(radiusAsString) {
         // Check if the radius is positive
-        if (radius > 0) {
+        if radius > 0 {
             // Calculate volume using the formula (4/3) * pi * r^3.
             let volume = (4.0 / 3.0) * Double.pi * pow(radius, 3)
             // Display the result formatted to 2 decimal places. [IN BLUE]
@@ -40,4 +40,3 @@ if let radiusAsString = readLine() {
         }
     }
 }
-
