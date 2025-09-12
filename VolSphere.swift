@@ -33,7 +33,7 @@ if let radiusAsString = readLine() {
             let volume = (4.0 / 3.0) * Double.pi * pow(radius, 3)
             // Display the result formatted to 2 decimal places. [IN BLUE]
             print("\u{001B}[0;34mPredicted volume: ", terminator: "")
-            print(String(format:"%.2f cm\u{00B3}", volume))
+            print(String(format: "%.2f cm\u{00B3}", volume))
         } else {
             // Error message for non-positive radius. [IN RED]
             print("\u{001B}[0;31mError: Radius must be a positive number.")
